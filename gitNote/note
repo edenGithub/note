@@ -71,7 +71,10 @@ feature分支
 	查看标签信息：git show v1.0
 
 操作标签
-		
+	删除标签：git tag -d v1.0
+	推送标签到远程：git push origin v1.0
+	一次性推送全部本地标签到远程：git push origin --tags
+	删除远程标签：第一步，先删除本地标签，第二步，git push origin :refs/tags/v1.0
 
 
 
