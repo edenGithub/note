@@ -18,3 +18,9 @@ Git
 版本回退
 	git log命令显示从最近到最远的提交日志
 	如果嫌输出信息太多，可以加上--pretty=oneline参数
+	git提供一个命令git reflog用来记录你的每一次命令，这样即可查看到未来版本的commitId
+	git reset --hard commit_id
+
+工作区和暂存区
+	git提供一个叫做stage的暂存区
+
