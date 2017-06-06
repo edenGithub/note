@@ -1,1 +1,7 @@
 Git
+
+安装与配置Git
+	直接安装Xcode，Xcode集成了Git。
+	安装完成后需要配置本机Git的userName和userEmail
+	git config --global user.name "Your name"
+	git config --global user.email "Your email"
