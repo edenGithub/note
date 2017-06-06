@@ -6,3 +6,8 @@ Git
 	git config --global user.name "Your name"
 	git config --global user.email "Your email"
 
+创建版本库
+	选择一个合适的地方，通过git init命令把这个目录变成Git可以管理的仓库。
+	把文件放到Git仓库分为两步：
+		git add <file>
+		git commit -m "wrote a readme file"
