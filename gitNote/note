@@ -52,3 +52,4 @@ Git
 Bug分支
 	当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后再git stash pop，回到工作现场。
 
+
