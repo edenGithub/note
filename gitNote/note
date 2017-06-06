@@ -49,4 +49,5 @@ Git
 	合并分支时，加上--no-ff参数就可以用普通方式合并，合并后的历史有分支，能看出来曾经做的合并，而fast forward看不出来曾经做过合并
 	删除github上的分支：git push origin :dev
 
-
+Bug分支
+	当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后再git stash pop，回到工作现场。
