@@ -64,4 +64,14 @@ feature分支
 	建立本地分支和远程分支的关联，使用git branch --set-upstream dev origin/dev
 	从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
 
+标签
+	在当前commit打一个新的标签：git tag v1.0
+	给对应的commit_id打一个标签：git tag v0.9 4s4c44a
+	可以创建带有说明的标签：git tag -a v1.0 -m "version 1.0 released" 4s4c44a
+	查看标签信息：git show v1.0
+
+操作标签
+		
+
+
 
