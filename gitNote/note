@@ -5,3 +5,4 @@ Git
 	安装完成后需要配置本机Git的userName和userEmail
 	git config --global user.name "Your name"
 	git config --global user.email "Your email"
+
