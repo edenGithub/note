@@ -51,5 +51,9 @@ Git
 
 Bug分支
 	当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后再git stash pop，回到工作现场。
+	git stash list查看所有stash	git stash clear清除掉stash
 
+feature分支
+	如果想要丢弃一个没有被合并过得分支，可以通过git branch -D <name>强行删除。
+	
 
