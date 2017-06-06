@@ -55,5 +55,13 @@ Bug分支
 
 feature分支
 	如果想要丢弃一个没有被合并过得分支，可以通过git branch -D <name>强行删除。
-	
+
+多人协作
+	查看远程库的信息：git remote
+	查看远程库详细信息：git remote -v
+	本地新建分支如果不推送到远程，对其他人就是不可见的
+	在本地创建和远程对应的分支，使用git checkout -b dev origin/dev，本地和远程的分支最好一样
+	建立本地分支和远程分支的关联，使用git branch --set-upstream dev origin/dev
+	从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
+
 
