@@ -16,4 +16,5 @@ Git
 	git diff <file>命令查看修改内容
 
 版本回退
-	
+	git log命令显示从最近到最远的提交日志
+	如果嫌输出信息太多，可以加上--pretty=oneline参数
