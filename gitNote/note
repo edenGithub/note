@@ -28,4 +28,16 @@ Git
 	当你改乱了工作区的某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file
 	当你不但改乱了工作区的某个文件的内容，还添加到了stage暂存区，想丢弃修改分两步，第一步用git reset HEAD file回到上一场景，第二部就按照上一步操作
 
+远程仓库
+	创建SSH Key使用命令ssh-keygen -t rsa -C "your email"，然后一路回车就可以了
+	可以把一个已有的仓库与github关联，在本地的仓库下运行命令：
+		git remote add origin git@github.com:edenGithub/note.git
+	推送master分支所有内容
+		git push -u origin master
+	从github克隆
+		git clone git@github.com:edenGithub/note.git
+		另一种写法：git clone https://github.com/edenGithub/note
+
+
+
 
