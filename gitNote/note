@@ -11,3 +11,9 @@ Git
 	把文件放到Git仓库分为两步：
 		git add <file>
 		git commit -m "wrote a readme file"
+
+时光穿梭机
+	git diff <file>命令查看修改内容
+
+版本回退
+	
