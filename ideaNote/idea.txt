@@ -1,0 +1,56 @@
+idea快捷键
+	Editing（编辑）
+		command + P  查看方法参数信息
+		control + J  快速查看文档
+		command + 鼠标放在代码上  显示代码简要信息
+		command + N  自动生成getter setter constructor等
+		control + O  重写父类的方法
+		control + I  实现接口中的方法
+		command + option + T  “Surround with”包围代码
+		command + option + /  块注释
+		command + option + L  格式化代码
+		control + option + O  优化import
+		control + shift + J  智能将代码拼接成一行
+		shift + enter  开始新的一行
+		command + shift + U  代码大小写切换
+		command + shift + [ ]  切换tab
+		option + fn + delete  删除到单词的末尾
+		option + delete  删除到单词的开头
+		command + 加号/减号  展开或折叠代码块
+		command + shift + 加号/减号  展开或折叠所有代码块
+
+	Search/Replace（查询/替换）
+		command + shift + F  全局查找
+		option + F7  find usages
+
+	Compile and Run（编译和运行）
+		command + F9  编译项目
+
+	Debug（调试）
+		F8  进入下一步，不进入方法体内
+		F7  进入下一步，进入当前方法体，但不会进入内嵌方法体
+		shift + F7  智能步入，当前行有多个方法调用，会弹出进入哪个方法
+		shift + F8  跳出
+		option + F8  计算表达式
+		command + option + R  运行到下一个断点
+		command + F8  切换断点，若有断点就删除，没有就添加
+
+	Refactoring（重构）
+		F5  复制文件到指定目录
+		F6  移动文件到指定目录
+		command + delete  安全删除文件
+		shift + F6  重命名文件
+		command + option + M  提取方法
+		command + option + V  提取变量
+		command + option + F  提取字段
+		command + option + C  提取常量
+		command + option + P  提取参数
+
+	通用
+		command + ,  打开通用设置
+		command + ;  打开项目设置
+		
+
+
+
+
