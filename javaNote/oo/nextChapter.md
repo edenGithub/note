@@ -127,6 +127,105 @@ final修饰的类不可以有子类
 
 ## 内部类
 
+* 非静态内部类
+
+`注：在非静态内部类里可以直接访问外部类的private成员，因为在非静态内部类对象里，保存了一个外部类对象的引用`
+
+```
+在内部类里访问外部类实例变量 = OutClass.this.propName
+访问非静态内部类实例变量 = this.propName
+如果外部类需要访问非静态内部类的成员，则必须显式创建非静态内部类对象
+注：可以把非静态内部类看做外部类的一种实例成员
+```
+
+* 静态内部类
+
+静态内部类可以包含静态成员，也可以包含非静态成员，静态内部类不能访问外部类的实例成员，即使是静态内部类的实例方法也不能访问外部类的实例成员
+
+* 使用内部类
+
+1.在外部类以外的地方定义内部类变量的语法格式： OuterClass.InnerClass varNmae
+2.由于非静态内部类对象必须寄生在外部类的对象里，因此在创建非静态内部类对象之前，必须先创建外部类对象：new OuterClass().new InnerClass()
+
+* 局部内部类
+
+`注：这种语法很“鸡肋”，因为这种类的作用域太小，只能在当钱方法内使用`
+
+* 匿名内部类
+
+## Lambda表达式
+
+Lambda表达式允许使用更加简洁的语法创建函数式接口的实例
+
+* 方法引用和构造器引用
+
+如果Lambda表达式的代码块只有一条代码，还可以在代码块中使用方法引用和构造器引用
+
+|种类|实例|说明|对应的Lambda表达式|
+|:------:|:------:|:------:|:------:|
+|引用类方法|类名::类方法|被实现方法的全部参数传给该类方法作为参数|(a, b) -> 类名.类方法(a, b)|
+|引用特定对象的实例方法|特定对象::实例方法|被实现方法的全部参数传给该方法作为参数|(a, b) -> 特定对象.实例方法(a, b)|
+|引用某类对象的实例方法|类名::实例方法|第一个参数作为调用者，后面全部参数传给该方法作为参数|(a, b) -> a.实例方法(b)|
+|引用构造器|类名::new|函数式接口中被实现方法的全部参数传给该构造器作为参数|(a, b) -> new 类名(a, b)|
+
+```
+引用类方法：
+@FunctionalInterface
+interface Converter{
+    Integer conver(String form);
+}
+
+Converter con = form -> Integer.valueOf(form);
+
+Converter con = Integer::valueOf;
+```
+
+```
+引用特定对象的实例方法：
+@FunctionalInterface
+interface Converter{
+	int conver(String form);
+}
+
+Converter con = form -> "Jiabinhe".indexOf(form);
+
+Converter con = "Jiabinhe"::indexOf;
+```
+
+```
+引用某类对象的实例方法：
+@FunctionalInterface
+interface Converter{
+    String conver(String a, int b, int c);
+}
+
+Converter con = (a, b, c) -> a.subString(b, c);
+
+Converter con = String::subString;
+```
+
+```
+引用构造器：
+@FunctionalInterface
+interface Converter{
+    JFrame win(String title);
+}
+
+Converter con = title -> new JFrame(title);
+
+Converter con = JFrame::new; 
+```
+
+## 枚举类
+
+
+
+
+
+
+
+
+
 
 
 
