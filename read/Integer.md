@@ -23,6 +23,14 @@ Integer使用两个类变量`MIN_VALUE` 和 `MAX_VALUE` 来分别表示int类型
 
 ## D
 
+Integer提供静态的toString方法，方法签名为：
+
+public static String toString(int i, int radix);
+
+radix如果小于2或者大于36（10个数字+26英文字母），则使用10作为基数
+
+
+
 
 
 
